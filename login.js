@@ -4,18 +4,6 @@ const sql = require("./database.js")
 
 const {createToken, verifyToken}=require("./jwt")
 
-// rout.get("/login",(req,res)=>{
-//     res.send("Welcome at login page")
-// })
-// const jwt=require("jsonwebtoken")
-
-// var createToken=(data)=>{
-//     // return jwt.sign(data,"secrete_Key")
-//     token=jwt.sign(data,"secrete_Key")
-//     console.log(token);
-//     return token
-// }
-
 const validation=(req,res,next)=>{
     console.log("validation here");
     next()
